@@ -1,10 +1,10 @@
 <?php 
 
 class Database {
-    private $hostname ="localhost";
-    private $database ="tienda_online";
-    private $username ="root";
-    private $password ="";
+    private $hostname ="://infinityfree.com";
+    private $database ="if0_42306766_tienda";
+    private $username ="if0_42306766";
+    private $password ="hFFiVGiZwJ1Hq";
     private $charset ="utf8";
 
     function conectar(){

@@ -25,7 +25,7 @@ try {
 
     //Recipients
     $mail->setFrom('leonardopizarroquispe@gmail.com', 'Tienda RT');
-    $mail->addAddress('leonardoquispepizarro@gmail.com', 'Joe User');     //Add a recipient
+    $mail->addAddress($email);     //Add a recipient
 
 
     //Content
@@ -34,6 +34,7 @@ try {
 
     $cuerpo = '<h4>Gracias por su compra</h4>';
     $cuerpo .= '<p>EL ID de su compra es <b>'. $id_transaccion .'</b></p>';
+    $cuerpo .= '<p>Monto total pagado: <b>$' . $monto . '</b></p>';
 
     $mail->Body    = $cuerpo;
     $mail->AltBody = 'Le enviamos los detalles de su compra.';
